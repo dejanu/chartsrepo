@@ -1,0 +1,12 @@
+Grafana hotline installed 📲:
+
+✅ Installed Release: {{ .Release.Name }} in namespace {{ .Release.Namespace }}
+
+✅ Add the service name to your Grafana contact points:
+http://{{ include "grafana-hotline.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.port }}/receive
+
+✅ Check the Bearer token for the contact point:
+
+kubectl logs $(kubectl get po --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "grafana-hotline.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}") --namespace {{ .Release.Namespace }}
+
+

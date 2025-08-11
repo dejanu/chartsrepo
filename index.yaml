@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  grafana-hotline:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-11T22:44:00.939359+03:00"
+    description: A Helmet chart for Grafana hotline
+    digest: 3d57937f9ce6ba3344ef6c0402b30321c55464844424a9c422ea240b3fa2d547
+    name: grafana-hotline
+    type: application
+    urls:
+    - https://dejanu.github.io/chartsrepo/grafana-hotline-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-08-11T22:44:00.938055+03:00"
