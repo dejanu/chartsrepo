@@ -9,7 +9,7 @@ Add this Helm repository:
 ```bash
 helm repo add dejanu https://dejanu.github.io/chartsrepo/
 helm repo update
-helm repo search dejanu
+helm search repo dejanu
 helm install my-release dejanu/sample-app
 ```
 
