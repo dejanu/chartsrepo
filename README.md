@@ -29,7 +29,7 @@ To add a new chart:
 
 3. Update the repository index:
    ```bash
-   helm repo index packages --url https://dejanu.github.io/chartsrepo/
+   helm repo index packages --url https://dejanu.github.io/chartsrepo/packages
    ```
 
 4. Commit and push the changes to trigger GitHub Pages deployment.
@@ -42,3 +42,5 @@ chartsrepo/
 └── packages/    # For packaged .tgz files and index.yaml
 └── README.md    # This file
 ```
+
+* Tutorial to [host-your-helm-repo-using-github](https://medium.com/@dejanualex/host-your-helm-repo-using-github-212ee44466cd)
